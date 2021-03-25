@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main (){
+	
+int i, j, a[11][11];
+
+for (i=0; i<11; i=i+1){
+	for (j=0; j<11; j=j+1){
+		a[i][j] = 0;
+		
+		if (i==j || i+j ==10){
+			a[i][j] = 1;
+		}
+		printf(" %d", a[i][j]);
+	}
+	printf("\n");
+}
+	
+	
+	return 0;
+}
